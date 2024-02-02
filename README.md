@@ -1,6 +1,13 @@
 # Chess Engine
 
 This is a simple chess engine implemented in Python. It provides basic functionalities for playing chess, including move generation, check detection, and castling.
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install chess-engine-ozerm
+````
 
 ## Functions
 
