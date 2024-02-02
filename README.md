@@ -153,9 +153,10 @@ A class representing a chess move, including methods for obtaining chess notatio
 
 ```python
 # Example Usage of the Chess Engine
+from chess_engine_ozerm import ChessEngine
 
 # Initialize the chess engine
-chess_engine = ChessEngine()
+chess_engine = ChessEngine.GameState()
 
 # Get all possible moves for the current position
 all_moves = chess_engine.get_all_possible_moves()
@@ -163,3 +164,5 @@ all_moves = chess_engine.get_all_possible_moves()
 # Print the moves
 for move in all_moves:
     print(move.get_chess_notation())
+
+
