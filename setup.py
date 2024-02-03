@@ -8,7 +8,7 @@ setup(
     description='Chess Engine for Python',
     author='ozerm',
     author_email='ozermehmet911@gmail.com',
-    url='https://github.com/ozermehmett/chess_engine',
+    url='https://github.com/ozermehmett/ozerm-chess-engine-with-python',
     keywords=['CHESS', 'ENGINE'],
     install_requires=[],
     classifiers=[
