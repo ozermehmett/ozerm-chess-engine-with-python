@@ -607,7 +607,7 @@ class GameState:
         :return:
         """
 
-        if self.board[row][col + 1] == '.' and self.board[row][col + 2] == '.':
+        if col + 2 < len(self.board[row]) and self.board[row][col + 1] == '.' and self.board[row][col + 2] == '.':
             if not self.square_under_attack(row, col + 1) and not self.square_under_attack(row, col + 2):
                 moves.append(Move((row, col), (row, col + 2), self.board, is_castle_move=True))
 
@@ -619,7 +619,8 @@ class GameState:
         :return:
         """
 
-        if self.board[row][col - 1] == '.' and self.board[row][col - 2] == '.' and self.board[row][col - 3] == '.':
+        if col - 1 >= 0 and col - 2 >= 0 and col - 3 >= 0 and self.board[row][col - 1] == '.' and self.board[row][
+            col - 2] == '.' and self.board[row][col - 3] == '.':
             if not self.square_under_attack(row, col - 1) and not self.square_under_attack(row, col - 2):
                 moves.append(Move((row, col), (row, col - 2), self.board, is_castle_move=True))
 
